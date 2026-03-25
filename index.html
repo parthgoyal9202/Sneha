@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Hearing and Speech Clinic | Authorized Best Sound Center</title>
+    <meta name="description" content="Authorized Best Sound Center in Dewas. Experience world-class hearing clarity with India's leading audiologists and premium hearing aids.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Interactive Sound Waves -->
+    <div id="ambient-sound-waves">
+        <div class="wave-layer wave-1"></div>
+        <div class="wave-layer wave-2"></div>
+        <div class="wave-layer wave-3"></div>
+    </div>
+
+    <!-- 1. Floating Header & Navigation -->
+    <header id="main-header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/sneha_logo.png" alt="Sneha Speech and Hearing Clinic Logo" class="logo-img" style="height: 80px; width: auto; mix-blend-mode: multiply;">
+            </div>
+            <nav class="desktop-menu" id="nav-menu">
+                <a href="#hero">Home</a>
+                <a href="#experts">Our Experts</a>
+                <a href="#services">Specialized Services</a>
+                <a href="#products">Premium Hearing Aids</a>
+                <a href="#testimonials">Patient Stories</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#booking" class="btn btn-primary">Book a Free Consultation</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Section 1: The Hero -->
+        <!-- 2. Section 1: The Hero Slider -->
+        <section id="hero" class="hero-slider-container">
+            <!-- Slide 1 -->
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(31, 92, 119, 0.4), rgba(31, 92, 119, 0.4)), url('assets/hero_img_user.jpg');">
+                <div class="hero-overlay-content">
+                    <h1 style="font-size: 3.5rem; line-height: 1.2;">Experience world-class audiology services right in your neighbourhood.</h1>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(31, 92, 119, 0.4), rgba(31, 92, 119, 0.4)), url('assets/speech_therapy.jpg');">
+                <div class="hero-overlay-content">
+                    <h1 style="font-size: 3.5rem; line-height: 1.2;">Empowering voices with expert pediatric and adult speech therapy.</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2.5 About Section -->
+        <section id="about" class="container" style="padding: 6rem 2rem; max-width: 1000px; margin: 0 auto; text-align: center;">
+            <div class="hero-badge" style="margin-bottom: 2rem; display: inline-block;">Authorized Best Sound Center</div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-weight: 500;">Experience World-Class Care in Dewas.</h2>
+            <p style="font-size: 1.125rem; color: #555; line-height: 1.8; margin-bottom: 2.5rem;">As a Signia Privileged Partner and Authorized Widex Best Sound Center, we combine 8+ years of expertise with the world's most advanced hearing technology, right in your neighborhood.</p>
+            <div class="partners-section" style="margin-top: 1rem;">
+                <p style="font-size: 0.875rem; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; font-weight: 500;">Our Global Technology Partners</p>
+                <div class="partners-logos" style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                    <img src="assets/phonak_logo.png" alt="Phonak" style="height: 40px; object-fit: contain; filter: grayscale(100%) opacity(60%); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(100%)'" onmouseout="this.style.filter='grayscale(100%) opacity(60%)'">
+                    <img src="assets/resound_logo.jpg" alt="ReSound GN" style="height: 40px; object-fit: contain; filter: grayscale(100%) opacity(60%); transition: all 0.3s; mix-blend-mode: multiply;" onmouseover="this.style.filter='grayscale(0%) opacity(100%)'" onmouseout="this.style.filter='grayscale(100%) opacity(60%)'">
+                    <img src="assets/signia_logo.png" alt="Signia" style="height: 45px; object-fit: contain; filter: grayscale(100%) opacity(60%); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(100%)'" onmouseout="this.style.filter='grayscale(100%) opacity(60%)'">
+                    <img src="assets/widex_logo.png" alt="Widex" style="height: 35px; object-fit: contain; filter: grayscale(100%) opacity(60%); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(100%)'" onmouseout="this.style.filter='grayscale(100%) opacity(60%)'">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2.75 Assess Your Hearing Digital Screener -->
+        <section id="screener" class="container" style="padding: 4rem 2rem 6rem; max-width: 1000px; margin: 0 auto; text-align: center; position: relative;">
+            <div class="blob-bg" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 300px; height: 300px; background: rgba(74, 144, 226, 0.2); filter: blur(80px); border-radius: 50%; z-index: -1;"></div>
+            
+            <div class="glass-card" style="background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.6); border-radius: 32px; padding: 4rem 2rem; box-shadow: 0 10px 40px rgba(31, 92, 119, 0.08);">
+                <div id="quiz-intro">
+                    <div class="hero-badge" style="margin-bottom: 1.5rem; display: inline-block; background: rgba(243, 156, 18, 0.1); color: var(--primary-orange); border: 1px solid rgba(243, 156, 18, 0.3);">Free Assessment</div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Assess Your Hearing in 60 Seconds</h2>
+                    <p style="font-size: 1.125rem; color: #555; max-width: 600px; margin: 0 auto 2.5rem;">Take our beautiful, interactive digital screener to understand your hearing profile before booking a consultation.</p>
+                    <button class="btn btn-primary" id="start-quiz-btn" style="padding: 1rem 3rem; font-size: 1.125rem;">Start the Quiz</button>
+                </div>
+
+                <div id="quiz-questions" style="display: none; transition: opacity 0.3s ease;">
+                    <div class="quiz-progress-container" style="max-width: 400px; margin: 0 auto 2.5rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.875rem; color: var(--text-grey); font-weight: 500;">
+                            <span id="quiz-step-text">Question 1 of 8</span>
+                        </div>
+                        <div style="width: 100%; height: 8px; background: rgba(31, 92, 119, 0.1); border-radius: 4px; overflow: hidden;">
+                            <div id="quiz-progress-bar" style="width: 12.5%; height: 100%; background: var(--primary-teal); border-radius: 4px; transition: width 0.4s ease;"></div>
+                        </div>
+                    </div>
+                    <h3 id="question-text" style="font-size: 1.8rem; margin-bottom: 2.5rem; color: var(--primary-teal); font-weight: 500; max-width: 700px; margin-left: auto; margin-right: auto; min-height: 80px; display: flex; align-items: center; justify-content: center; transition: opacity 0.3s ease;">Do you struggle to hear in crowded restaurants?</h3>
+                    <div class="quiz-options" style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: 0 auto;">
+                        <button class="btn btn-secondary quiz-option" data-value="4" style="width: 100%; justify-content: flex-start; padding: 1.25rem 2rem; font-size: 1.1rem; text-align: left;">Yes, frequently</button>
+                        <button class="btn btn-secondary quiz-option" data-value="2" style="width: 100%; justify-content: flex-start; padding: 1.25rem 2rem; font-size: 1.1rem; text-align: left;">Sometimes</button>
+                        <button class="btn btn-secondary quiz-option" data-value="0" style="width: 100%; justify-content: flex-start; padding: 1.25rem 2rem; font-size: 1.1rem; text-align: left;">Rarely or never</button>
+                    </div>
+                </div>
+
+                <div id="quiz-results" style="display: none;">
+                    <div class="hero-badge" style="background-color: rgba(34, 197, 94, 0.15); color: #16a34a; border: 1px solid rgba(34, 197, 94, 0.3); margin-bottom: 1.5rem; display: inline-block;">Result Generated</div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-dark);">Based on your answers, we recommend:</h3>
+                    <h4 id="result-headline" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-teal); font-weight: 600;">Comprehensive Audiological Assessment</h4>
+                    <p id="result-description" style="font-size: 1.125rem; color: #555; max-width: 600px; margin: 0 auto 2.5rem;">It seems you may be experiencing difficulty in noisy environments. A thorough diagnostic test will help us pinpoint the exact nature of your hearing profile.</p>
+                    <button class="btn btn-primary" id="book-result-btn" style="padding: 1rem 3rem; font-size: 1.125rem;">Book this Service</button>
+                    <button class="btn btn-outline" id="retake-quiz-btn" style="padding: 1rem 3rem; font-size: 1.125rem; margin-left: 1rem;">Retake Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Section 2: Meet Our Experts (Moved up for Authority) -->
+        <section id="experts">
+            <div class="expert-container">
+                <div class="expert-image-wrapper">
+                    <img src="assets/specialist_portrait_1774284309218.png" alt="Leading Audiologist Dr. Shubham Singh" class="expert-img">
+                </div>
+                <div class="expert-content">
+                    <h2>Your Journey to Clarity,<br>Guided by Experts.</h2>
+                    <h3 class="expert-name">Dr. Shubham Singh <span class="credentials">Leading Audiologist</span></h3>
+                    <p class="expert-bio">With 8+ years in healthcare, our team of certified specialists is dedicated to empathetic care and technical precision, ensuring you receive the personalized attention you deserve.</p>
+                    <ul class="expert-highlights">
+                        <li><span>✓</span> Certified Audiology Specialist</li>
+                        <li><span>✓</span> 8+ Years of Clinical Experience</li>
+                        <li><span>✓</span> Pioneer in Advanced Digital Fitting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Section 3: Specialized Services (Tests before Products) -->
+        <section id="services">
+            <div class="section-center">
+                <h2>Beyond Hearing Aids: A Holistic Approach<br>to Your Hearing Health.</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Category 1: Diagnostics -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"/>
+                            <path d="M12 12L12 12.01"/>
+                        </svg>
+                    </div>
+                    <h3>Hearing Tests & Diagnostics</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Pure Tone Audiometry</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Impedance Audiometry</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Hearing Aid Trial & Fitting</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> O.A.E. Test (Newborn Hearing)</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> A.B.R. / B.E.R.A. Test</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> SISI/TDT Special Test</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Tinnitus Therapy</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2: Therapies -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+                        </svg>
+                    </div>
+                    <h3>Therapy Center</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Speech Therapy</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Auditory Verbal Therapy</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Voice Therapy</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Stammering Therapy</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> ADHD Therapy</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Autism Therapy</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Misarticulation Therapy</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3: Facilities -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22v-5m0-10V2m0 20a8 8 0 100-16 8 8 0 000 16z"/>
+                            <path d="M14 12a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Additional Facilities</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Comprehensive Hearing Aid Range</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Hearing Aid Repair Services</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Ear Mold Fabrication</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> EMI Options Available</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Cochlear Implant Consultation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4.5. Section Simulator -->
+        <section id="simulator">
+            <div class="section-center">
+                <h2>Experience Their World.</h2>
+                <p>Understanding hearing loss is the first step to helping a loved one. Use our interactive simulator to hear what a conversation sounds like through their ears.</p>
+            </div>
+            
+            <div class="simulator-container">
+                <div class="simulator-card">
+                    <div class="simulator-header">
+                        <button id="sim-play-btn" class="btn btn-primary" aria-label="Play Simulation">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <span>Listen to Simulation</span>
+                        </button>
+                    </div>
+                    
+                    <div class="simulator-visualizer" id="sim-visualizer">
+                        <div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div>
+                    </div>
+
+                    <div class="simulator-controls">
+                        <button class="sim-level active" data-filter="normal">
+                            <span class="level-indicator"></span> Normal Hearing
+                        </button>
+                        <button class="sim-level" data-filter="mild">
+                            <span class="level-indicator"></span> Mild Loss
+                        </button>
+                        <button class="sim-level" data-filter="severe">
+                            <span class="level-indicator"></span> Severe Loss
+                        </button>
+                    </div>
+                    
+                    <div class="sim-footer">
+                        <p class="sim-status-text" id="sim-status-text">Audio courtesy of public domain libraries. Ensure volume is at a comfortable level.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Section 4: Buying Guide -->
+        <section id="guide" class="container">
+            <div class="section-center">
+                <h2>How to Choose the Right Hearing Aid</h2>
+                <p>Navigating the options can be overwhelming. Here is our 4-step approach to finding your perfect fit.</p>
+            </div>
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <div class="step-number">01</div>
+                    <div class="guide-content">
+                        <h3>Professional Assessment</h3>
+                        <p>It all starts with a comprehensive audiometric test to determine the exact degree and type of your hearing loss.</p>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <div class="step-number">02</div>
+                    <div class="guide-content">
+                        <h3>Understanding Styles</h3>
+                        <p>From invisible-in-canal to powerful behind-the-ear models, we match the physical style to your dexterity and cosmetic preferences.</p>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <div class="step-number">03</div>
+                    <div class="guide-content">
+                        <h3>Lifestyle Needs</h3>
+                        <p>Do you frequent noisy restaurants? Need Bluetooth streaming? We align the device's technology level with your daily life.</p>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <div class="step-number">04</div>
+                    <div class="guide-content">
+                        <h3>Custom Fitting</h3>
+                        <p>The best technology requires expert tuning. We precision-fit and program your device, providing ongoing support as you adapt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Section 5: Product Showcase (Moved down to be the 'solution') -->
+        <section id="products">
+            <div class="section-header">
+                <h2>Our Premium Digital Hearing Aids: Precision Meets Comfort.</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                    <button class="filter-btn" data-filter="advanced">Advanced</button>
+                </div>
+            </div>
+
+            <div class="products-scroll-container">
+                <!-- Signia Card -->
+                <div class="product-card" data-category="premium">
+                    <div class="product-img-wrapper">
+                        <img src="assets/premium_hearing_aids_1774284292036.png" alt="Signia Pure Charge&Go">
+                    </div>
+                    <div class="product-info">
+                        <span class="brand-label">Signia</span>
+                        <h3>Pure Charge&Go</h3>
+                        <ul class="product-benefits">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Invisible comfort</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> AI-powered noise cancellation</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Portable wireless charging</li>
+                        </ul>
+                        <button class="btn btn-outline view-details-btn" data-product-id="signia" style="width: 100%;">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Phonak Card -->
+                <div class="product-card" data-category="premium">
+                    <div class="product-img-wrapper">
+                        <img src="assets/phonak_aid.png" alt="Phonak Audéo Lumity">
+                    </div>
+                    <div class="product-info">
+                        <span class="brand-label">Phonak</span>
+                        <h3>Audéo Lumity</h3>
+                        <ul class="product-benefits">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Unmatched speech clarity</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Universal connectivity</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Adaptive hearing in busy environments</li>
+                        </ul>
+                        <button class="btn btn-outline view-details-btn" data-product-id="phonak" style="width: 100%;">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Widex Card -->
+                <div class="product-card" data-category="advanced">
+                    <div class="product-img-wrapper">
+                        <img src="assets/widex_aid.png" alt="Widex Moment Sheer">
+                    </div>
+                    <div class="product-info">
+                        <span class="brand-label">Widex</span>
+                        <h3>Moment Sheer</h3>
+                        <ul class="product-benefits">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Most natural sound</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Ultra-fast sound processing</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Long-lasting battery</li>
+                        </ul>
+                        <button class="btn btn-outline view-details-btn" data-product-id="widex" style="width: 100%;">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Section 5: Patient Stories (Wall of Trust) -->
+        <section id="testimonials">
+            <div class="testimonial-header">
+                <h2>Customer Wall of Trust</h2>
+                <div class="trust-badge">
+                    <span class="star-rating">4.9 ★★★★★</span>
+                    <span class="review-count">Based on 120+ Justdial reviews</span>
+                </div>
+            </div>
+
+            <div class="testimonial-scroller-wrapper">
+                <div class="testimonial-track">
+                    <!-- Original + New Reviews (10 Total) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Dr. Shubham Singh changed my father's life. He can hear us clearly again! The service was exceptionally professional and empathetic."</div>
+                        <div class="testimonial-author"><div class="avatar">R</div><div class="author-info"><span class="author-name">Rajesh Kumar</span><span class="review-date">Oct 12, 2025</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Best sound center in Dewas. The clinic is spotless, and they took the time to explain every detail of the Widex device I purchased."</div>
+                        <div class="testimonial-author"><div class="avatar">A</div><div class="author-info"><span class="author-name">Anjali Sharma</span><span class="review-date">Nov 05, 2025</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"We visited for my grandmother. The customized fitting and the patience shown by the staff was truly commendable. Highly recommended."</div>
+                        <div class="testimonial-author"><div class="avatar">V</div><div class="author-info"><span class="author-name">Vikram Singh</span><span class="review-date">Jan 22, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"The precision of their diagnostic tests is unparalleled. As a musician, finding exactly the right frequency response in my aids was crucial, and they nailed it."</div>
+                        <div class="testimonial-author"><div class="avatar">M</div><div class="author-info"><span class="author-name">Manish Patel</span><span class="review-date">Feb 14, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Beautiful clinic, incredibly friendly staff. They made my 6-year-old totally comfortable during her speech therapy evaluation. A godsend."</div>
+                        <div class="testimonial-author"><div class="avatar">S</div><div class="author-info"><span class="author-name">Sunita Verma</span><span class="review-date">Feb 28, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"I've been wearing hearing aids for 15 years, and my new Phonak pair from Sneha is by far the best experience I've had. Crystal clear programming."</div>
+                        <div class="testimonial-author"><div class="avatar">P</div><div class="author-info"><span class="author-name">Prakash Tiwari</span><span class="review-date">Mar 02, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"I was suffering from tinnitus for months. Their specialized management program completely changed my day-to-day life. I can finally sleep."</div>
+                        <div class="testimonial-author"><div class="avatar">N</div><div class="author-info"><span class="author-name">Neha Gupta</span><span class="review-date">Mar 09, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Extremely quick service! My hearing aid broke on a Sunday and they managed to assess and repair it by Monday afternoon. Grateful for their dedication."</div>
+                        <div class="testimonial-author"><div class="avatar">D</div><div class="author-info"><span class="author-name">Deepak Chouhan</span><span class="review-date">Mar 15, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"The whole process from the digital screening to the final fitting was completely transparent. Zero hidden costs and absolute premium care."</div>
+                        <div class="testimonial-author"><div class="avatar">T</div><div class="author-info"><span class="author-name">Tarun Joshi</span><span class="review-date">Mar 18, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"I appreciated that they didn't push the most expensive option, but actually analyzed my lifestyle and recommended the perfect mid-tier device."</div>
+                        <div class="testimonial-author"><div class="avatar">K</div><div class="author-info"><span class="author-name">Kavita Reddy</span><span class="review-date">Mar 22, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    
+                    <!-- Duplicated Set for Infinite Marquee Scroll -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Dr. Shubham Singh changed my father's life. He can hear us clearly again! The service was exceptionally professional and empathetic."</div>
+                        <div class="testimonial-author"><div class="avatar">R</div><div class="author-info"><span class="author-name">Rajesh Kumar</span><span class="review-date">Oct 12, 2025</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Best sound center in Dewas. The clinic is spotless, and they took the time to explain every detail of the Widex device I purchased."</div>
+                        <div class="testimonial-author"><div class="avatar">A</div><div class="author-info"><span class="author-name">Anjali Sharma</span><span class="review-date">Nov 05, 2025</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"We visited for my grandmother. The customized fitting and the patience shown by the staff was truly commendable. Highly recommended."</div>
+                        <div class="testimonial-author"><div class="avatar">V</div><div class="author-info"><span class="author-name">Vikram Singh</span><span class="review-date">Jan 22, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"The precision of their diagnostic tests is unparalleled. As a musician, finding exactly the right frequency response in my aids was crucial, and they nailed it."</div>
+                        <div class="testimonial-author"><div class="avatar">M</div><div class="author-info"><span class="author-name">Manish Patel</span><span class="review-date">Feb 14, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Beautiful clinic, incredibly friendly staff. They made my 6-year-old totally comfortable during her speech therapy evaluation. A godsend."</div>
+                        <div class="testimonial-author"><div class="avatar">S</div><div class="author-info"><span class="author-name">Sunita Verma</span><span class="review-date">Feb 28, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"I've been wearing hearing aids for 15 years, and my new Phonak pair from Sneha is by far the best experience I've had. Crystal clear programming."</div>
+                        <div class="testimonial-author"><div class="avatar">P</div><div class="author-info"><span class="author-name">Prakash Tiwari</span><span class="review-date">Mar 02, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"I was suffering from tinnitus for months. Their specialized management program completely changed my day-to-day life. I can finally sleep."</div>
+                        <div class="testimonial-author"><div class="avatar">N</div><div class="author-info"><span class="author-name">Neha Gupta</span><span class="review-date">Mar 09, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"Extremely quick service! My hearing aid broke on a Sunday and they managed to assess and repair it by Monday afternoon. Grateful for their dedication."</div>
+                        <div class="testimonial-author"><div class="avatar">D</div><div class="author-info"><span class="author-name">Deepak Chouhan</span><span class="review-date">Mar 15, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"The whole process from the digital screening to the final fitting was completely transparent. Zero hidden costs and absolute premium care."</div>
+                        <div class="testimonial-author"><div class="avatar">T</div><div class="author-info"><span class="author-name">Tarun Joshi</span><span class="review-date">Mar 18, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">"I appreciated that they didn't push the most expensive option, but actually analyzed my lifestyle and recommended the perfect mid-tier device."</div>
+                        <div class="testimonial-author"><div class="avatar">K</div><div class="author-info"><span class="author-name">Kavita Reddy</span><span class="review-date">Mar 22, 2026</span></div><div class="jd-badge">Justdial</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6.5. Section: FAQs -->
+        <section id="faq" class="container" style="max-width: 800px; margin: 0 auto; padding: 4rem 1rem;">
+            <div class="section-center" style="margin-bottom: 2rem;">
+                <h2 style="font-size: 2.5rem; text-align: center; font-weight: 500;">FAQs</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>How is hearing loss diagnosed?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Hearing loss is diagnosed through comprehensive audiometric testing, which includes pure-tone audiometry, speech testing, and sometimes middle ear analysis. These tests help determine the type and exact degree of your hearing loss.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Can hearing loss be reversed?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While some types of conductive hearing loss (like blockages or infections) can be medically reversed, most sensorineural hearing loss (damage to the inner ear) is permanent. However, it can be effectively managed and improved with advanced hearing aids or implants.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Can loud noise cause hearing loss?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, prolonged exposure to loud noises or a single sudden extremely loud sound can cause noise-induced hearing loss. This type of hearing loss is permanent but entirely preventable by using adequate hearing protection in noisy environments.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Is hearing loss a normal part of aging?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, age-related hearing loss (presbycusis) is very common. As we age, the tiny hair cells in the inner ear naturally begin to break down, leading to gradual hearing loss, particularly with high-frequency sounds.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Are there any treatments for hearing loss?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Treatments depend heavily on the underlying cause. They range from simple medical procedures for ear wax blockages to sophisticated digital hearing aids, assistive listening devices, and sometimes surgical options like cochlear implants.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Can children have hearing loss?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Hearing loss can occur in children due to genetics, infections during pregnancy, complications at birth, or frequent ear infections. Early detection is crucial to prevent delays in their speech and cognitive development.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Can hearing loss be hereditary?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, genetics play a significant role in many types of hearing loss. If you have a strong family history of hearing difficulties, you may be at a higher risk and should schedule regular audiological evaluations.</p>
+                    </div>
+                </div>
+                <div class="faq-item active"> <!-- Open last one like the mockup -->
+                    <button class="faq-question">
+                        <svg class="chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Are there any lifestyle changes that can prevent hearing loss?</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, some lifestyle changes that can help prevent hearing loss include protecting your ears from loud noises, avoiding unnecessary exposure to ototoxic drugs, and maintaining good overall health.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Section 6: Localized Booking -->
+        <section id="booking">
+            <div class="booking-container">
+                <div class="booking-form-wrapper">
+                    <h2>Request a Quote & Consultation</h2>
+                    <p>Take the first step towards better hearing. Fill out the form below or call us directly.</p>
+                    <form class="quote-form" id="consultation-form">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="service">Interested Service</label>
+                            <select id="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="Audiological Assessment">Comprehensive Audiological Assessment</option>
+                                <option value="Hearing Aid">Hearing Aid Consultation & Fitting</option>
+                                <option value="Tinnitus">Tinnitus Evaluation & Management</option>
+                                <option value="Pediatric Speech">Pediatric Speech Therapy</option>
+                                <option value="Adult Speech">Adult Speech Therapy</option>
+                                <option value="Maintenance">Device Maintenance & Repair</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Quote</button>
+                    </form>
+                    <div id="form-success-message" class="success-message" style="display: none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48" style="color: var(--primary-teal); margin-bottom: 1rem;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <h3>Thank You!</h3>
+                        <p>Your request has been received. Our team will contact you shortly.</p>
+                    </div>
+                </div>
+                
+                <div class="booking-map-wrapper">
+                    <iframe src="https://maps.google.com/maps?q=MG%20Road%20Dewas,%20Madhya%20Pradesh&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border-radius: 0 32px 32px 0;" allowfullscreen></iframe>
+                    <div class="map-overlay" style="pointer-events: none;">
+                        <div class="location-card" style="pointer-events: auto;">
+                            <h3>Sneha Hearing and Speech Clinic</h3>
+                            <p>Behind Asha Sarees on MG Road, Dewas.</p>
+                            <div class="clinic-hours">
+                                <strong>Hours:</strong><br>
+                                Mon-Sat: 10:00 AM - 7:00 PM<br>
+                                Sun: Closed
+                            </div>
+                            <a href="tel:+919876543210" class="btn btn-primary call-btn">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-text" style="color: var(--primary-teal); margin-bottom: 1rem;">
+                    <span class="brand-name" style="font-family: serif; font-size: 1.5rem; letter-spacing: 1px;">SNEHA</span><br>
+                    <span class="brand-tag" style="text-transform: uppercase; font-size: 0.65rem; letter-spacing: 0.5px;">Speech and Hearing Clinic</span>
+                </div>
+                <p>Authorized Best Sound Center</p>
+                <div class="authorized-logos">
+                    <span class="auth-badge">Signia Privileged Partner</span>
+                    <span class="auth-badge">Widex Best Sound Center</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#hero">Home</a>
+                <a href="#experts">Our Experts</a>
+                <a href="#services">Specialized Services</a>
+                <a href="#products">Premium Hearing Aids</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility Statement</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2026 Sneha Speech and Hearing Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
