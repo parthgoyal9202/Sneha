@@ -9,13 +9,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Ambient Interactive Sound Waves -->
-    <div id="ambient-sound-waves">
-        <div class="wave-layer wave-1"></div>
-        <div class="wave-layer wave-2"></div>
-        <div class="wave-layer wave-3"></div>
-    </div>
+    <!-- Global dynamic background orbs -->
+    <div class="page-orb page-orb-1"></div>
+    <div class="page-orb page-orb-2"></div>
+    <div class="page-orb page-orb-3"></div>
 
     <!-- 1. Floating Header & Navigation -->
     <header id="main-header">
@@ -42,28 +39,84 @@
     </header>
 
     <main>
-        <!-- 2. Section 1: The Hero -->
-        <!-- 2. Section 1: The Hero Slider -->
-        <section id="hero" class="hero-slider-container">
-            <!-- Slide 1 -->
-            <div class="hero-slide active" style="background-image: linear-gradient(rgba(31, 92, 119, 0.4), rgba(31, 92, 119, 0.4)), url('assets/hero_img_user.jpg');">
-                <div class="hero-overlay-content">
-                    <h1 style="font-size: 3.5rem; line-height: 1.2;">Experience world-class audiology services right in your neighbourhood.</h1>
+        <!-- 2. Section 1: The Hero (Split Layout) -->
+        <section id="hero" class="hero-split">
+            <!-- Left: Content -->
+            <div class="hero-left">
+                <div class="hero-badge-pill">
+                    <span class="hero-badge-dot"></span>
+                    Authorized Widex Best Sound Center · Dewas
+                </div>
+
+                <h1 class="hero-title">
+                    Hear Better.<br>
+                    <span class="hero-title-accent">Live Fully.</span>
+                </h1>
+
+                <p class="hero-desc">
+                    Expert audiology &amp; speech therapy, right in your neighbourhood. India's finest hearing technology, paired with 8+ years of compassionate care.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#booking" class="btn btn-hero-primary">
+                        Book a Free Consultation
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#screener" class="btn btn-hero-secondary">
+                        Check Your Hearing
+                    </a>
+                </div>
+
+                <div class="hero-trust-strip">
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">1500+</span>
+                        <span class="hero-stat-label">Patients Helped</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">4.9★</span>
+                        <span class="hero-stat-label">Justdial Rating</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">8+</span>
+                        <span class="hero-stat-label">Years Experience</span>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Slide 2 -->
-            <div class="hero-slide" style="background-image: linear-gradient(rgba(31, 92, 119, 0.4), rgba(31, 92, 119, 0.4)), url('assets/speech_therapy.jpg');">
-                <div class="hero-overlay-content">
-                    <h1 style="font-size: 3.5rem; line-height: 1.2;">Empowering voices with expert pediatric and adult speech therapy.</h1>
+
+            <!-- Right: Image with floating cards -->
+            <div class="hero-right">
+                <div class="hero-img-frame">
+                    <img src="assets/hero_img_user.jpg" alt="Expert audiologist performing a hearing check" class="hero-main-img">
+                    <!-- Floating chip 1 -->
+                    <div class="hero-float-chip chip-top">
+                        <div class="chip-icon">🎧</div>
+                        <div class="chip-text">
+                            <strong>Free Trial</strong>
+                            <span>Premium hearing aids</span>
+                        </div>
+                    </div>
+                    <!-- Floating chip 2 -->
+                    <div class="hero-float-chip chip-bottom">
+                        <div class="chip-icon">✅</div>
+                        <div class="chip-text">
+                            <strong>Certified Specialist</strong>
+                            <span>8+ yrs clinical experience</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Background orbs for the hero -->
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
         </section>
 
         <!-- 2.5 About Section -->
         <section id="about" class="container" style="padding: 6rem 2rem; max-width: 1000px; margin: 0 auto; text-align: center;">
             <div class="hero-badge" style="margin-bottom: 2rem; display: inline-block;">Authorized Best Sound Center</div>
-            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-weight: 500;">Experience World-Class Care in Dewas.</h2>
+            <h2 style="margin-bottom: 1.5rem; font-weight: 500;">Experience World-Class Care in Dewas.</h2>
             <p style="font-size: 1.125rem; color: #555; line-height: 1.8; margin-bottom: 2.5rem;">As a Signia Privileged Partner and Authorized Widex Best Sound Center, we combine 8+ years of expertise with the world's most advanced hearing technology, right in your neighborhood.</p>
             <div class="partners-section" style="margin-top: 1rem;">
                 <p style="font-size: 0.875rem; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; font-weight: 500;">Our Global Technology Partners</p>
@@ -83,7 +136,7 @@
             <div class="glass-card" style="background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.6); border-radius: 32px; padding: 4rem 2rem; box-shadow: 0 10px 40px rgba(31, 92, 119, 0.08);">
                 <div id="quiz-intro">
                     <div class="hero-badge" style="margin-bottom: 1.5rem; display: inline-block; background: rgba(243, 156, 18, 0.1); color: var(--primary-orange); border: 1px solid rgba(243, 156, 18, 0.3);">Free Assessment</div>
-                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Assess Your Hearing in 60 Seconds</h2>
+                    <h2 style="margin-bottom: 1rem;">Assess Your Hearing in 60 Seconds</h2>
                     <p style="font-size: 1.125rem; color: #555; max-width: 600px; margin: 0 auto 2.5rem;">Take our beautiful, interactive digital screener to understand your hearing profile before booking a consultation.</p>
                     <button class="btn btn-primary" id="start-quiz-btn" style="padding: 1rem 3rem; font-size: 1.125rem;">Start the Quiz</button>
                 </div>
@@ -97,7 +150,7 @@
                             <div id="quiz-progress-bar" style="width: 12.5%; height: 100%; background: var(--primary-teal); border-radius: 4px; transition: width 0.4s ease;"></div>
                         </div>
                     </div>
-                    <h3 id="question-text" style="font-size: 1.8rem; margin-bottom: 2.5rem; color: var(--primary-teal); font-weight: 500; max-width: 700px; margin-left: auto; margin-right: auto; min-height: 80px; display: flex; align-items: center; justify-content: center; transition: opacity 0.3s ease;">Do you struggle to hear in crowded restaurants?</h3>
+                    <h3 id="question-text" style="margin-bottom: 2.5rem; color: var(--primary-teal); font-weight: 500; max-width: 700px; margin-left: auto; margin-right: auto; min-height: 80px; display: flex; align-items: center; justify-content: center; transition: opacity 0.3s ease;">Do you struggle to hear in crowded restaurants?</h3>
                     <div class="quiz-options" style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: 0 auto;">
                         <button class="btn btn-secondary quiz-option" data-value="4" style="width: 100%; justify-content: flex-start; padding: 1.25rem 2rem; font-size: 1.1rem; text-align: left;">Yes, frequently</button>
                         <button class="btn btn-secondary quiz-option" data-value="2" style="width: 100%; justify-content: flex-start; padding: 1.25rem 2rem; font-size: 1.1rem; text-align: left;">Sometimes</button>
@@ -107,8 +160,8 @@
 
                 <div id="quiz-results" style="display: none;">
                     <div class="hero-badge" style="background-color: rgba(34, 197, 94, 0.15); color: #16a34a; border: 1px solid rgba(34, 197, 94, 0.3); margin-bottom: 1.5rem; display: inline-block;">Result Generated</div>
-                    <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-dark);">Based on your answers, we recommend:</h3>
-                    <h4 id="result-headline" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-teal); font-weight: 600;">Comprehensive Audiological Assessment</h4>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Based on your answers, we recommend:</h3>
+                    <h4 id="result-headline" style="margin-bottom: 1rem; color: var(--primary-teal); font-weight: 600;">Comprehensive Audiological Assessment</h4>
                     <p id="result-description" style="font-size: 1.125rem; color: #555; max-width: 600px; margin: 0 auto 2.5rem;">It seems you may be experiencing difficulty in noisy environments. A thorough diagnostic test will help us pinpoint the exact nature of your hearing profile.</p>
                     <button class="btn btn-primary" id="book-result-btn" style="padding: 1rem 3rem; font-size: 1.125rem;">Book this Service</button>
                     <button class="btn btn-outline" id="retake-quiz-btn" style="padding: 1rem 3rem; font-size: 1.125rem; margin-left: 1rem;">Retake Quiz</button>
@@ -218,25 +271,27 @@
                             <span>Listen to Simulation</span>
                         </button>
                     </div>
-                    
-                    <div class="simulator-visualizer" id="sim-visualizer">
-                        <div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div>
-                    </div>
 
-                    <div class="simulator-controls">
-                        <button class="sim-level active" data-filter="normal">
-                            <span class="level-indicator"></span> Normal Hearing
-                        </button>
-                        <button class="sim-level" data-filter="mild">
-                            <span class="level-indicator"></span> Mild Loss
-                        </button>
-                        <button class="sim-level" data-filter="severe">
-                            <span class="level-indicator"></span> Severe Loss
-                        </button>
-                    </div>
-                    
-                    <div class="sim-footer">
-                        <p class="sim-status-text" id="sim-status-text">Audio courtesy of public domain libraries. Ensure volume is at a comfortable level.</p>
+                    <div class="simulator-body">
+                        <div class="simulator-visualizer" id="sim-visualizer">
+                            <div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div><div class="sim-bar"></div>
+                        </div>
+
+                        <div class="simulator-controls">
+                            <button class="sim-level active" data-filter="normal">
+                                <span class="level-indicator"></span> Normal Hearing
+                            </button>
+                            <button class="sim-level" data-filter="mild">
+                                <span class="level-indicator"></span> Mild Loss
+                            </button>
+                            <button class="sim-level" data-filter="severe">
+                                <span class="level-indicator"></span> Severe Loss
+                            </button>
+                        </div>
+
+                        <div class="sim-footer">
+                            <p class="sim-status-text" id="sim-status-text">Audio courtesy of public domain libraries. Ensure volume is at a comfortable level.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,6 +307,7 @@
                 <div class="guide-card">
                     <div class="step-number">01</div>
                     <div class="guide-content">
+                        <div class="guide-icon">🔬</div>
                         <h3>Professional Assessment</h3>
                         <p>It all starts with a comprehensive audiometric test to determine the exact degree and type of your hearing loss.</p>
                     </div>
@@ -259,6 +315,7 @@
                 <div class="guide-card">
                     <div class="step-number">02</div>
                     <div class="guide-content">
+                        <div class="guide-icon">👂</div>
                         <h3>Understanding Styles</h3>
                         <p>From invisible-in-canal to powerful behind-the-ear models, we match the physical style to your dexterity and cosmetic preferences.</p>
                     </div>
@@ -266,6 +323,7 @@
                 <div class="guide-card">
                     <div class="step-number">03</div>
                     <div class="guide-content">
+                        <div class="guide-icon">🌐</div>
                         <h3>Lifestyle Needs</h3>
                         <p>Do you frequent noisy restaurants? Need Bluetooth streaming? We align the device's technology level with your daily life.</p>
                     </div>
@@ -273,6 +331,7 @@
                 <div class="guide-card">
                     <div class="step-number">04</div>
                     <div class="guide-content">
+                        <div class="guide-icon">⚙️</div>
                         <h3>Custom Fitting</h3>
                         <p>The best technology requires expert tuning. We precision-fit and program your device, providing ongoing support as you adapt.</p>
                     </div>
@@ -284,11 +343,6 @@
         <section id="products">
             <div class="section-header">
                 <h2>Our Premium Digital Hearing Aids: Precision Meets Comfort.</h2>
-                <div class="filter-controls">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="premium">Premium</button>
-                    <button class="filter-btn" data-filter="advanced">Advanced</button>
-                </div>
             </div>
 
             <div class="products-scroll-container">
@@ -447,7 +501,7 @@
         <!-- 6.5. Section: FAQs -->
         <section id="faq" class="container" style="max-width: 800px; margin: 0 auto; padding: 4rem 1rem;">
             <div class="section-center" style="margin-bottom: 2rem;">
-                <h2 style="font-size: 2.5rem; text-align: center; font-weight: 500;">FAQs</h2>
+                <h2 style="text-align: center; font-weight: 500;">FAQs</h2>
             </div>
             <div class="faq-container">
                 <div class="faq-item">
@@ -562,7 +616,7 @@
                 </div>
                 
                 <div class="booking-map-wrapper">
-                    <iframe src="https://maps.google.com/maps?q=MG%20Road%20Dewas,%20Madhya%20Pradesh&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border-radius: 0 32px 32px 0;" allowfullscreen></iframe>
+                    <iframe src="https://maps.google.com/maps?q=MG%20Road%20Dewas,%20Madhya%20Pradesh&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0; width:100%; height:100%; min-height:300px; display:block; border-radius: 0 32px 32px 0;" allowfullscreen></iframe>
                     <div class="map-overlay" style="pointer-events: none;">
                         <div class="location-card" style="pointer-events: auto;">
                             <h3>Sneha Hearing and Speech Clinic</h3>
@@ -625,6 +679,17 @@
                 <!-- Content injected via JS -->
             </div>
         </div>
+    </div>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta" id="mobile-cta">
+        <a href="tel:+919876543210" class="btn-hero-primary" style="flex:1; justify-content:center;">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+        </a>
+        <a href="#booking" class="btn-hero-secondary" style="flex:1; justify-content:center;">
+            Book a Visit
+        </a>
     </div>
 
     <script src="script.js"></script>

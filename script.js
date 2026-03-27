@@ -1,14 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 0. Hero Auto-Slider
-    const heroSlides = document.querySelectorAll('.hero-slide');
-    if (heroSlides.length > 0) {
-        let currentSlide = 0;
-        setInterval(() => {
-            heroSlides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % heroSlides.length;
-            heroSlides[currentSlide].classList.add('active');
-        }, 5000); // Cross-fade every 5 seconds
+    // ─── Scroll-Reveal (entrance animations) ───────────────────────────────
+    const revealEls = document.querySelectorAll(
+        '#about .section-center, #experts .expert-container, ' +
+        '#services .service-card, #guide .guide-card, ' +
+        '#products .product-card, #testimonials .testimonial-header, ' +
+        '#simulator .simulator-card, #faq .faq-item, ' +
+        '#booking .booking-container, .hero-float-chip'
+    );
+    revealEls.forEach((el, i) => {
+        el.classList.add('reveal');
+        if (i % 3 === 1) el.classList.add('reveal-delay-1');
+        if (i % 3 === 2) el.classList.add('reveal-delay-2');
+    });
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ─── Mobile Sticky CTA ─────────────────────────────────────────────────
+    const mobileCta = document.getElementById('mobile-cta');
+    if (mobileCta) {
+        let lastScrollY = 0;
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY > 300) {
+                mobileCta.classList.add('visible');
+            } else {
+                mobileCta.classList.remove('visible');
+            }
+            lastScrollY = scrollY;
+        }, { passive: true });
     }
+
 
     // 1. Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
@@ -65,28 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Product Filtering
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const productCards = document.querySelectorAll('.product-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
-            btn.classList.add('active');
-
-            const filterValue = btn.getAttribute('data-filter');
-
-            productCards.forEach(card => {
-                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                    card.classList.remove('hidden-card');
-                } else {
-                    card.classList.add('hidden-card');
-                }
-            });
-        });
-    });
+    // Product filtering removed as requested.
 
     // 4. Smooth Scrolling for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
